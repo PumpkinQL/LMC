@@ -40,7 +40,7 @@ process.addEventListener("click", () =>
         {
             token.type = "MEMORY"
         }
-        else if (token.type === "")
+        else if (!token.type)
         {
             token.type = "VALUE"
         }
@@ -55,7 +55,7 @@ process.addEventListener("click", () =>
 
     const end_token = () =>
     {
-        if (token.type === "")
+        if (!token.type)
         {
             return
         }
@@ -101,7 +101,7 @@ process.addEventListener("click", () =>
                 end_token()
                 break;
             default:
-                if (token.type === "")
+                if (!token.type)
                 {
                     token.text += char
                     token.type = "INSTRUCTION"
