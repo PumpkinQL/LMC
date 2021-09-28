@@ -283,6 +283,7 @@ function parse(tokens)
                 }
                 else if (token.text === "HLT")
                 {
+                    draw_memory(memory)
                     return
                 }
                 else if (token.text === "BRA")
