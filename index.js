@@ -228,6 +228,7 @@ function parse(tokens)
                     throw_error("Invalid syntax. Line: " + line_number)
                     return
                 }
+                break;
             case "ADD":
                 accumulator += memory[parseInt(token.text)]
                 break;
